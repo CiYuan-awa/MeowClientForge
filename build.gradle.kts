@@ -22,6 +22,7 @@ val mod_name: String by project
 val mod_version: String by project
 val mod_id: String by project
 val mod_archives_name: String by project
+layout.buildDirectory.set(file("D:/_Development_/Java/MeowClientForge/Release"))
 
 // Replaces the variables in `ExampleMod.java` to the ones specified in `gradle.properties`.
 blossom {
@@ -34,7 +35,7 @@ blossom {
 version = mod_version
 // Sets the group, make sure to change this to your own. It can be a website you own backwards or your GitHub username.
 // e.g. com.github.<your username> or com.<your domain>
-group = "org.polyfrost"
+group = "net.ciyuan"
 
 // Sets the name of the output jar (the one you put in your mods folder and send to other people)
 // It outputs all versions of the mod into the `versions/{mcVersion}/build` directory.

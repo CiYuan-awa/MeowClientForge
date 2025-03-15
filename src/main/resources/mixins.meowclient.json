@@ -1,0 +1,17 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7",
+  "package": "net.ciyuan.meowclient.mixin",
+  "refmap": "mixins.meowclient.refmap.json",
+  "injectors": {
+    "maxShiftBy": 5
+  },
+  "client": [
+    "MinecraftMixin",
+    "RenderMixin"
+  ],
+  "verbose": true,
+  "mixins": [
+    "RenderLivingMixin"
+  ]
+}
