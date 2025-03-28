@@ -6,7 +6,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import java.util.*
 
-class DeathAnimationHandler {
+object DeathAnimationHandler {
     @SubscribeEvent
     fun onEntityDeath(event: LivingDeathEvent) {
         if (!MainConfig.disableMobDeathAnimation) return

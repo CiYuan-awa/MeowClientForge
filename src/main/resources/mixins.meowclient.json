@@ -8,10 +8,12 @@
   },
   "client": [
     "MinecraftMixin",
-    "RenderMixin"
+    "RenderMixin",
+    "SoundManagerMixin"
   ],
   "verbose": true,
   "mixins": [
+    "NetworkManagerMixin",
     "RenderLivingMixin"
   ]
 }

@@ -6,10 +6,10 @@ import net.ciyuan.meowclient.MeowClient
 /**
  * An example OneConfig HUD that is started in the config and displays text.
  *
- * @see MainConfig.hud
+ * @see Config.hud
  */
 class MainHud : SingleTextHud(MeowClient.NAME, true) {
-    public override fun getText(example: Boolean): String {
+    public override fun getText(input: Boolean): String {
         return "Meow!"
     }
 }

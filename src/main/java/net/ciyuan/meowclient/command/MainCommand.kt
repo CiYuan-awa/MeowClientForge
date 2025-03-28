@@ -3,6 +3,7 @@ package net.ciyuan.meowclient.command
 import cc.polyfrost.oneconfig.utils.commands.annotations.Command
 import cc.polyfrost.oneconfig.utils.commands.annotations.Main
 import net.ciyuan.meowclient.MeowClient
+import net.ciyuan.meowclient.config.MainConfig
 
 /**
  * An example command implementing the Command api of OneConfig.
@@ -15,9 +16,9 @@ import net.ciyuan.meowclient.MeowClient
  * @see MeowClient
  */
 @Command(value = MeowClient.MODID, description = "Access the " + MeowClient.NAME + " GUI.")
-class MainCommand {
+object MainCommand {
     @Main
     private fun handle() {
-        MeowClient.config?.openGui()
+        MainConfig.openGui()
     }
 }
